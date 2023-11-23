@@ -10,7 +10,7 @@ export const FizzBuzzer = ({ min, max }) => {
 		let result = ''
 
 		for (const [divider, text] of Object.entries(wordMap)) {
-			if (number % divider == 0) {
+			if (Number(number) % divider == 0) {
 				result += text
 			}
 		}
@@ -24,7 +24,7 @@ export const FizzBuzzer = ({ min, max }) => {
 
 	const numbers = []
 
-	for (let i = min; i <= max; i++) {
+	for (let i = Number(min); i <= Number(max); i++) {
 		numbers.push(i)
 	}
 
